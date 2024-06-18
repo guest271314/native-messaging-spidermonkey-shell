@@ -35,7 +35,7 @@ or
 ```
 #!/usr/bin/env -S /home/user/.jsvu/engines/spidermonkey/spidermonkey
 ```
-9. To test click `service worker` link in panel of unpacked extension which is DevTools for background.js in MV3 `ServiceWorker`, observe echo'ed message from SpiderMonkey Native Messaging host. See Notes.
+9. To test click `service worker` link in panel of unpacked extension which is DevTools for background.js in MV3 `ServiceWorker`, observe echo'ed message from SpiderMonkey Native Messaging host. See [Notes](https://github.com/guest271314/native-messaging-spidermonkey-shell/blob/main/README.md#notes).
 
 ### Notes
 

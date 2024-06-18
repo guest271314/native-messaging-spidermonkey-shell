@@ -1,4 +1,4 @@
-SpiderMonkey JavaScript/WebAssembly Shell Native Messaging Host
+SpiderMonkey JavaScript and WebAssembly engine Shell Native Messaging Host
 
 Installation and usage on Chrome and Chromium
 
@@ -39,7 +39,7 @@ or
 
 ### Notes
 
-SpiderMonkey JavaScript/WebAssembly Shell does not expect to be used as a Native Messaging host. Stardard input and output are not specified by ECMA-262 so we have to work around that fact in this shell. 
+[SpiderMonkey JavaScript/WebAssembly engine](https://spidermonkey.dev/) Shell does not expect to be used as a Native Messaging host. Stardard input and output are not specified by ECMA-262 so we have to work around that fact in this shell. 
 
 JavaScript *runtimes* tested so far, include QuickJS, txiki.js, Deno, Node.js, Bun. Each process standard input and output differently. With the aforementioned runtimes we can maintain a persistent connect using `connectNative`. See [NativeMessagingHosts](https://github.com/guest271314/NativeMessagingHosts).
 

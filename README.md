@@ -1,4 +1,4 @@
-SpiderMonkey Shell Native Messaging Host
+SpiderMonkey JavaScript/WebAssembly Shell Native Messaging Host
 
 Installation and usage on Chrome and Chromium
 

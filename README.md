@@ -43,7 +43,7 @@ or
 
 JavaScript *runtimes* tested so far, include QuickJS, txiki.js, Deno, Node.js, Bun. Each process standard input and output differently. With the aforementioned runtimes we can maintain a persistent connection between client and host using [`connectNative()`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/connectNative). See [NativeMessagingHosts](https://github.com/guest271314/NativeMessagingHosts).
 
-While we use `connectNative` here instead of `sendNativeMessage` that is only to send a trailing `"\r\n\r\n"` for `readline()` to stop reading (blocking), echo the message back then call `disconnect()`, repeat for each message, to avoid the `js` shell hanging on subsequent messages from client to host. This means that the s
+While we use `connectNative` here instead of `sendNativeMessage` that is only to send a trailing `"\r\n\r\n"` for `readline()` to stop reading (blocking), echo the message back then call `disconnect()`, repeat for each message, to avoid the `js` shell hanging on subsequent messages from client to host.
 
 For the above reasons `native-messaging-spidermonkey-shell` will not be added to the working Native Messaging hosts repository listed above until we get this working as intended. 
 

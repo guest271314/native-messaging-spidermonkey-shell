@@ -1,0 +1,7 @@
+{
+    "name": "nm_spidermonkey",
+    "description": "SpiderMonkey Shell Native Messaging Host",
+    "path": "",
+    "type": "stdio",
+    "allowed_origins": []
+  }

@@ -1,0 +1,19 @@
+{
+  "name": "nm-spidermonkey",
+  "short_name": "nm_spidermonkey",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "SpiderMonkey Shell Native Messaging host",
+  "permissions": [
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {},
+  "homepage_url": "https://github.com/guest271314/native-messaging-spidermonkey-shell"
+}

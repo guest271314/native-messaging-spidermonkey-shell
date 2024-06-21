@@ -47,8 +47,6 @@ While we use `connectNative` here instead of `sendNativeMessage` that is only to
 
 For the above reasons `native-messaging-spidermonkey-shell` will not be added to the working Native Messaging hosts repository listed above until we get this working as intended. 
 
-The same goes for V8's [`d8`](https://v8.dev/docs/d8) shell, which is still a W.I.P.
-
 For differences between OS and browser implementations see [Chrome incompatibilities](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Chrome_incompatibilities#native_messaging).
 
 # License

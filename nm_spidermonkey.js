@@ -6,12 +6,9 @@
 function encodeMessage(str) {
   return new Uint8Array([...str].map((s) => s.codePointAt()));
 }
-// Call readline() N times to catch `\r\n\r\n"` from 2d port.postMessage()
-let done = false;
-
-let reads = 0;
 
 function getMessage() {
+  // Call readline() N times to catch `\r\n\r\n"` from 2d port.postMessage()
   let stdin;
   while (true) {
     stdin = readline();

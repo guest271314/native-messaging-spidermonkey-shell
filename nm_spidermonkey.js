@@ -30,6 +30,7 @@ function getMessage() {
     .replace(/^[0-9A-Z]+(?=[\[\{"])/igu, "") 
     .replace(/^[\]\}](?=\[)/i, "")
     .trimStart().trim();
+  // https://stackoverflow.com/a/52434176
   // let previous = redirect("length.txt");
   // putstr(data.length);
   // redirect(previous); // restore the redirection to stdout

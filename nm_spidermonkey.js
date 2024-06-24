@@ -16,12 +16,12 @@ function getMessage() {
       break;
     }
   }
-  // TODO: Handle the *string* input "{}"
+  
   let data = `${stdin}`.replace(/[\r\n]+|\\x([0-9A-Fa-f]{2,4})/gu, "")
     .replace(/[^A-Za-z0-9\s\[,\]\{\}:_"]+/igu, "")
     .replace(/^"rnrn/gu, "")
     .replace(/^[#\r\n\}_]+(?=\[)/gu, "")
-    .replace(/^"+(?=["\{]+)|^"(?!"$)/gu, "") 
+    .replace(/^"(?=["\{]+)|^"(?!"$)/gu, "") 
     .replace(/^\[(?=\[(?!.*\]{2}$))/gu, "")
     .replace(/^\{(?!\}|.+\}$)/gu, "")
     .replace(/^[0-9A-Z]+(?=[\[\{"])/igu, "") 

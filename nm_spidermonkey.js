@@ -51,6 +51,11 @@ function main() {
   // const h = read("help.txt", "binary");
   // sendMessage(encodeMessage(JSON.stringify([...h])));
   while (true) {
+    // Terminate current process when chrome-extension://<ID> is not a running process
+    // \x00 or \x01, 512 or 513
+    if (os.system("pgrep", ["-f", scriptArgs[0]]) == 513) {
+      break;
+    }
     const message = getMessage();
     sendMessage(message);
   }

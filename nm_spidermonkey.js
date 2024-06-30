@@ -52,8 +52,8 @@ function main() {
   // sendMessage(encodeMessage(JSON.stringify([...h])));
   while (true) {
     // Terminate current process when chrome-extension://<ID> is not a running process
-    // \x00 or \x01, 512 or 513
-    if (os.system("pgrep", ["-f", scriptArgs[0]]) == 513) {
+    // https://discourse.mozilla.org/t/131564/
+    if (!!os.system(`pgrep -fln ${scriptArgs[0]} > /dev/null`)) {
       break;
     }
     const message = getMessage();

@@ -1,4 +1,4 @@
-#!/usr/bin/env -S JS_STDERR=err.txt /home/user/.jsvu/engines/spidermonkey/spidermonkey --enable-import-attributes --enable-uint8array-base64 --enable-arraybuffer-resizable --enable-top-level-await --enable-async-iterator-helpers --enable-iterator-helpers -m
+#!/usr/bin/env -S JS_STDERR=err.txt /home/user/.jsvu/engines/spidermonkey/spidermonkey --enable-import-attributes --enable-uint8array-base64 --enable-top-level-await --enable-async-iterator-helpers --enable-iterator-helpers -m
 // /home/user/bin/jsshell-linux-x86_64/js
 // SpiderMonkey Shell Native Messaging host
 // guest271314 7-7-2023, 6-16-2024
